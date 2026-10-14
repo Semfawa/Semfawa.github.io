@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Impact Clients crée des vidéos publicitaires courtes pour aider les commerces à attirer l'attention et obtenir plus de demandes.">
+  <title>Impact Clients — Des vidéos qui attirent les clients</title>
+  <style>
+    :root{--ink:#10213a;--muted:#5c6b80;--blue:#2367f2;--cyan:#27d5c2;--paper:#f5f8fc;--white:#fff;--line:#e2e9f3}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none} .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}.brand{font-weight:900;letter-spacing:-.6px;font-size:1.2rem}.brand span{color:var(--blue)}
+    .navlinks{display:flex;align-items:center;gap:24px;font-size:.93rem;color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:12px;font-weight:800;border:1px solid transparent;cursor:pointer;transition:.2s}.btn-primary{background:var(--blue);color:white;box-shadow:0 8px 24px #2367f22b}.btn-primary:hover{transform:translateY(-2px);background:#1554d8}.btn-outline{border-color:var(--line);background:white}.btn-outline:hover{border-color:var(--blue)}
+    .hero{background:radial-gradient(circle at 82% 20%,#d8fff8 0,transparent 28%),linear-gradient(135deg,#f4f8ff 0%,#fff 62%);padding:82px 0 72px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:99px;background:#e7efff;color:#174fbd;font-size:.82rem;font-weight:800}.dot{width:8px;height:8px;border-radius:50%;background:var(--cyan)}
+    h1{font-size:clamp(2.5rem,5vw,4.6rem);line-height:1.04;letter-spacing:-2.6px;margin:20px 0}.gradient{color:var(--blue)}.lead{font-size:1.12rem;color:var(--muted);max-width:580px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.micro{font-size:.88rem;color:var(--muted)}
+    .visual{position:relative;min-height:390px;border-radius:28px;background:linear-gradient(145deg,#112744,#173f74);padding:22px;box-shadow:0 28px 70px #122b4a25;overflow:hidden}.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.visual:before{width:240px;height:240px;background:#27d5c2;opacity:.25;right:-40px;top:-50px}.visual:after{width:180px;height:180px;background:#2367f2;opacity:.5;left:-70px;bottom:-70px}
+    .screen{position:relative;z-index:1;border:1px solid #ffffff33;background:#ffffff12;border-radius:20px;padding:16px;backdrop-filter:blur(8px)}.screen-top{display:flex;justify-content:space-between;color:#e7f1ff;font-size:.8rem;margin-bottom:14px}.video-frame{height:230px;border-radius:15px;position:relative;overflow:hidden;background:linear-gradient(135deg,#ffb25f,#fa5b69 50%,#512e92);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}.video-frame:before{content:"";position:absolute;width:220px;height:220px;border:30px solid #ffffff22;border-radius:50%;right:-50px;top:-40px}.play{width:62px;height:62px;display:grid;place-items:center;border-radius:50%;background:#ffffffdd;color:#174fbd;font-size:1.4rem;margin:0 auto 12px}.frame-text{position:relative;font-weight:900;font-size:1.65rem;line-height:1.1;text-shadow:0 2px 12px #0003}.frame-sub{font-size:.85rem;font-weight:600;margin-top:9px}.screen-bottom{display:flex;justify-content:space-between;color:#dbe8ff;font-size:.82rem;padding-top:13px}.floating{position:absolute;z-index:2;background:#fff;border-radius:14px;padding:12px 15px;box-shadow:0 12px 30px #06182c33;font-size:.83rem}.floating strong{display:block;font-size:1.1rem}.float-a{right:0;bottom:34px}.float-b{left:0;top:45px}
+    section{padding:76px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 38px}.kicker{text-transform:uppercase;letter-spacing:1.8px;font-size:.76rem;font-weight:900;color:var(--blue)}h2{font-size:clamp(2rem,3.4vw,3rem);line-height:1.12;letter-spacing:-1px;margin:10px 0 14px}.section-head p,.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:20px;padding:24px;background:white}.icon{width:48px;height:48px;border-radius:14px;background:#eaf1ff;display:grid;place-items:center;font-size:1.4rem;margin-bottom:18px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted);font-size:.96rem}.soft{background:var(--paper)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{padding:20px;border-top:3px solid var(--blue);background:#fff;border-radius:0 0 16px 16px}.num{font-size:.8rem;font-weight:900;color:var(--blue)}.step h3{margin:8px 0}
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.work{border-radius:20px;overflow:hidden;background:#172d4a;color:#fff;min-height:260px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;position:relative}.work:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#ffb25f,#ee5b76 48%,#302f85);opacity:.9}.work:nth-child(2):before{background:linear-gradient(145deg,#1ac8b0,#1463a9 55%,#12294c)}.work:nth-child(3):before{background:linear-gradient(145deg,#ffc857,#ed7046 50%,#782e66)}.work>*{position:relative}.work .tag{font-size:.76rem;text-transform:uppercase;letter-spacing:1px;font-weight:900;opacity:.9}.work h3{font-size:1.4rem;line-height:1.15;margin:8px 0}.work p{margin:0;font-size:.9rem;color:#ffffffdf}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.price-card{border:1px solid var(--line);border-radius:20px;padding:25px;display:flex;flex-direction:column}.price-card.featured{border:2px solid var(--blue);box-shadow:0 16px 40px #2367f21c;position:relative}.popular{font-size:.75rem;font-weight:900;color:var(--blue);text-transform:uppercase;letter-spacing:1px}.price{font-size:2rem;font-weight:900;letter-spacing:-1px;margin:12px 0 0}.price small{font-size:.8rem;color:var(--muted);font-weight:600;letter-spacing:0}.price-card ul{padding-left:20px;color:var(--muted);flex:1}.price-card li{margin:8px 0}.price-card .btn{width:100%;margin-top:14px}
+    .cta{background:linear-gradient(120deg,#10213a,#174f9b);color:#fff;border-radius:28px;padding:42px;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:24px}.cta p{color:#d6e4fb}.cta .btn{background:var(--cyan);color:#082b39;justify-self:end}
+    .faq{max-width:800px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{font-weight:800;cursor:pointer}.faq p{color:var(--muted);margin-bottom:0}
+    footer{background:#0b1729;color:#dce6f4;padding:34px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-muted{color:#a9b9d0;font-size:.86rem}
+    @media(max-width:800px){.navlinks{display:none}.hero{padding:55px 0}.hero-grid{grid-template-columns:1fr;gap:34px}.visual{min-height:340px}.cards,.portfolio,.pricing{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.cta{grid-template-columns:1fr;padding:30px}.cta .btn{justify-self:start}section{padding:58px 0}}
+    @media(max-width:480px){h1{letter-spacing:-1.5px}.hero-actions .btn{width:100%}.steps{grid-template-columns:1fr}.visual{padding:14px}.video-frame{height:205px}.float-a{right:0;bottom:12px}.float-b{top:18px}.footer-row{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Navigation principale">
+      <a class="brand" href="#accueil">IMPACT<span>CLIENTS</span></a>
+      <div class="navlinks"><a href="#services">Services</a><a href="#methode">Méthode</a><a href="#exemples">Exemples</a><a href="#tarifs">Tarifs</a></div>
+      <a class="btn btn-primary" href="#contact">Parlons de ton projet ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Vidéos publicitaires pour les entreprises</div>
+        <h1>Fais connaître ton activité. <span class="gradient">Attire plus de clients.</span></h1>
+        <p class="lead">Nous créons des vidéos courtes, claires et captivantes pour présenter tes produits, mettre en valeur ton service et donner envie aux clients de te contacter.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Demander un devis gratuit →</a>
+          <a class="btn btn-outline" href="#exemples">Voir nos exemples</a>
+        </div>
+        <p class="micro">Pour commerces, restaurants, marques et entrepreneurs. Travail à distance ou selon disponibilité locale.</p>
+      </div>
+      <div class="visual" aria-label="Illustration d'une vidéo publicitaire">
+        <div class="floating float-b">🎬 <strong>Une idée.</strong> Une vidéo.</div>
+        <div class="screen">
+          <div class="screen-top"><span>APERÇU PUBLICITAIRE</span><span>00:15</span></div>
+          <div class="video-frame">
+            <div>
+              <div class="play">▶</div>
+              <div class="frame-text">TON PRODUIT.<br>TON HISTOIRE.</div>
+              <div class="frame-sub">Une vidéo qui donne envie d'agir.</div>
+            </div>
+          </div>
+          <div class="screen-bottom"><span>Format vertical • Réseaux sociaux</span><span>9:16</span></div>
+        </div>
+        <div class="floating float-a">✨ <strong>Simple & impactant</strong>Conçu pour le mobile</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Nos services</div><h2>Le bon message, au bon format.</h2><p>Des contenus adaptés à ton activité et à tes objectifs, sans compliquer les choses.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">🎥</div><h3>Vidéos publicitaires</h3><p>Des vidéos courtes pour présenter un produit, annoncer une offre ou faire découvrir ton entreprise.</p></article>
+        <article class="card"><div class="icon">📱</div><h3>Reels, TikTok & Shorts</h3><p>Des formats verticaux avec montage rythmé, textes lisibles, musique adaptée et appel à l'action.</p></article>
+        <article class="card"><div class="icon">💡</div><h3>Idées & scripts</h3><p>Des concepts et des textes simples pour expliquer ton offre et capter l'attention dès les premières secondes.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="methode">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Notre méthode</div><h2>De ton idée à une vidéo prête à publier.</h2><p>Un processus simple, avec des étapes claires et des validations avant livraison.</p></div>
+      <div class="steps">
+        <div class="step"><div class="num">ÉTAPE 01</div><h3>On échange</h3><p class="muted">Tu nous expliques ton activité, ton public et ton objectif.</p></div>
+        <div class="step"><div class="num">ÉTAPE 02</div><h3>On prépare</h3><p class="muted">Nous proposons une idée, un texte et un style adaptés.</p></div>
+        <div class="step"><div class="num">ÉTAPE 03</div><h3>On monte</h3><p class="muted">La vidéo est montée avec les éléments fournis et les ressources convenues.</p></div>
+        <div class="step"><div class="num">ÉTAPE 04</div><h3>Tu valides</h3><p class="muted">Après les ajustements prévus, tu reçois le fichier prêt à publier.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="exemples">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Exemples de concepts</div><h2>Imaginons ta prochaine publicité.</h2><p>Ces maquettes illustrent des directions créatives. Elles ne représentent pas encore des réalisations clients.</p></div>
+      <div class="portfolio">
+        <article class="work"><span class="tag">Restaurant</span><h3>Donner faim en 15 secondes.</h3><p>Plans rapprochés, prix clair et invitation à commander.</p></article>
+        <article class="work"><span class="tag">Boutique</span><h3>Faire ressortir le produit.</h3><p>Présentation dynamique, bénéfices visibles et appel à l'action.</p></article>
+        <article class="work"><span class="tag">Service</span><h3>Expliquer. Rassurer. Convertir.</h3><p>Un problème, une solution, une prochaine étape simple.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="tarifs">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Offres de lancement</div><h2>Une formule adaptée à ton besoin.</h2><p>Tarifs indicatifs à personnaliser selon la durée, les ressources, les déplacements et le niveau de montage.</p></div>
+      <div class="pricing">
+        <article class="price-card"><h3>Essentiel</h3><p class="muted">Pour tester une première vidéo.</p><div class="price">15 000 <small>FCFA / vidéo</small></div><ul><li>1 vidéo courte verticale</li><li>Montage simple</li><li>Textes à l'écran</li><li>1 série de corrections</li></ul><a class="btn btn-outline" href="#contact">Choisir Essentiel</a></article>
+        <article class="price-card featured"><div class="popular">Le plus polyvalent</div><h3>Visibilité</h3><p class="muted">Pour communiquer régulièrement.</p><div class="price">40 000 <small>FCFA / pack</small></div><ul><li>3 vidéos courtes</li><li>Déclinaisons adaptées aux réseaux</li><li>Accroches et appels à l'action</li><li>1 série de corrections par vidéo</li></ul><a class="btn btn-primary" href="#contact">Choisir Visibilité</a></article>
+        <article class="price-card"><h3>Sur mesure</h3><p class="muted">Pour un besoin spécifique.</p><div class="price">Sur devis</div><ul><li>Concept personnalisé</li><li>Volume et formats à définir</li><li>Options voix off possibles</li><li>Planning convenu ensemble</li></ul><a class="btn btn-outline" href="#contact">Demander un devis</a></article>
+      </div>
+      <p class="micro" style="text-align:center;margin-top:18px">Les tarifs sont des propositions de départ, non des prix définitifs. Confirme les coûts et le périmètre avant publication.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta">
+        <div><div class="kicker" style="color:#72f4e4">Prêt à te lancer ?</div><h2>Parlons de ta prochaine vidéo.</h2><p>Dis-nous ce que tu vends, à qui tu veux t'adresser et ce que tu souhaites obtenir. Nous préparerons une proposition adaptée.</p></div>
+        <a class="btn" id="whatsappCta" href="https://wa.me/" target="_blank" rel="noopener">Nous écrire sur WhatsApp ↗</a>
+      </div>
+      <p class="micro" style="text-align:center;margin-top:16px">Contact direct sur WhatsApp : +237 697 742 453.</p>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Questions fréquentes</div><h2>Avant de commencer</h2></div>
+      <div class="faq">
+        <details><summary>Dois-je avoir déjà une vidéo filmée ?</summary><p>Pas forcément. Selon le projet, nous pouvons travailler à partir de tes photos et vidéos, ou définir ensemble les images à fournir. Les tournages éventuels doivent être convenus séparément.</p></details>
+        <details><summary>Combien de temps faut-il pour recevoir ma vidéo ?</summary><p>Le délai dépend du projet, de la disponibilité des éléments et des corrections. Le délai précis sera confirmé avant le début du travail.</p></details>
+        <details><summary>La vidéo garantit-elle des ventes ?</summary><p>Non. Une vidéo peut aider à présenter ton offre et attirer l'attention, mais les résultats dépendent aussi du produit, du prix, du public, de la diffusion et du service client.</p></details>
+        <details><summary>Comment démarrer ?</summary><p>Écris-nous en décrivant ton activité, le produit à promouvoir, le public visé et ton budget approximatif.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-row">
+    <div><a class="brand" href="#accueil" style="color:white">IMPACT<span>CLIENTS</span></a><div class="footer-muted">Des vidéos claires. Des idées qui marquent.</div></div>
+    <div class="footer-muted">© <span id="year"></span> Impact Clients. Tous droits réservés.</div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // PERSONNALISATION : remplace 2376XXXXXXXX par ton numéro WhatsApp avec indicatif pays, sans + ni espaces.
+  const whatsappNumber = '237697742453';
+  const message = encodeURIComponent("Bonjour Impact Clients, je souhaite obtenir un devis pour une vidéo publicitaire. Mon activité est : ");
+  document.getElementById('whatsappCta').href = 'https://wa.me/' + whatsappNumber + '?text=' + message;
+</script>
+</body>
+</html>
